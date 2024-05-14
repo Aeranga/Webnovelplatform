@@ -2,8 +2,8 @@
 // Database connection
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "your_database_name";
+$password = "ERAnga99";
+$dbname = "novel";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -17,7 +17,7 @@ if(isset($_GET['id'])) {
     $novel_id = $_GET['id'];
 
     // Query to fetch novel details based on ID
-    $sql_novel = "SELECT * FROM novels WHERE id=$novel_id";
+    $sql_novel = "SELECT * FROM novels WHERE id=$novelid";
     $result_novel = $conn->query($sql_novel);
 
     if ($result_novel->num_rows > 0) {

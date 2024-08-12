@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A0C1D;
+    color: #fff;
+}
+
+header {
+    background-color: #1A1D3B;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.notification-bar {
+    background-color: #F5C150;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.notification-bar p {
+    margin: 0;
+    color: #333;
+}
+
+.notification-bar a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.highlighted-novel {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1A1D3B;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.highlighted-novel .novel-info {
+    flex: 1;
+}
+
+.highlighted-novel h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.highlighted-novel p {
+    margin-bottom: 10px;
+}
+
+.highlighted-novel .buttons button {
+    background-color: #F5C150;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.highlighted-novel .novel-cover img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.recently-added, .most-read-novels, .latest-updates {
+    padding: 20px;
+    background-color: #0A0C1D;
+}
+
+.recently-added h2, .most-read-novels h2, .latest-updates h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.recently-added .novel-list, .most-read-novels .novel-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.recently-added .novel-card, .most-read-novels .novel-rank, .latest-updates .update-item {
+    flex: 1;
+    min-width: 150px;
+    background-color: #1A1D3B;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #1A1D3B;
+    margin-top: 20px;
+}
+
+.footer-content nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-content nav ul li a {
+    color: #F5C150;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .highlighted-novel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlighted-novel .novel-info, .highlighted-novel .novel-cover {
+        text-align: center;
+    }
+
+    .highlighted-novel .novel-cover img {
+        margin-top: 20px;
+    }
+
+    .recently-added .novel-list, .most-read-novels .novel-grid {
+        flex-direction: column;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

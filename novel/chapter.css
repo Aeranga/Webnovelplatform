@@ -1,0 +1,94 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e1a2b;
+    color: #d7d7d7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+.chapter-header {
+    background-color: #0c1725;
+    padding: 10px 0;
+}
+
+.chapter-header .back-link {
+    color: #d7d7d7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.chapter-header .back-link:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+.chapter-content {
+    padding: 20px 0;
+}
+
+.chapter-content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chapter-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Footer styles */
+.chapter-footer {
+    background-color: #0c1725;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.chapter-footer .toc-btn,
+.chapter-footer .next-chapter-btn {
+    background-color: #1a2c47;
+    color: #d7d7d7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.chapter-footer .toc-btn:hover,
+.chapter-footer .next-chapter-btn:hover {
+    background-color: #243b5e;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .chapter-content h1 {
+        font-size: 20px;
+    }
+
+    .chapter-content p {
+        font-size: 14px;
+    }
+
+    .chapter-footer .toc-btn,
+    .chapter-footer .next-chapter-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
